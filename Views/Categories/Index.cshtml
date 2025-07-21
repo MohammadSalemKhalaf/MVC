@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+    <html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <a href="/Categories/Create">Add Products</a>
+    @foreach (var category in @Model)
+    {
+        @* <h1>@category</h1> *@
+         <h1>@category.Name</h1> 
+         <a href="/Categories/Details/@category.Id">Details</a>
+        <a href="/Categories/Delete/@category.Id">Delete</a>
+        <a href="/Categories/Edit/@category.Id">Edit</a>
+
+    }
+</body>
+    </html>
